@@ -1,31 +1,6 @@
 " Leader
 let g:mapleader=','
 
-" map each number to its shift-key character
-" inoremap 1 !
-" inoremap 2 @
-" inoremap 3 #
-" inoremap 4 $
-" inoremap 5 %
-" inoremap 6 ^
-" inoremap 7 &
-" inoremap 8 *
-" inoremap 9 (
-" inoremap 0 )
-" inoremap - _
-" " and then the opposite
-" inoremap ! 1
-" inoremap @ 2
-" inoremap # 3
-" inoremap $ 4
-" inoremap % 5
-" inoremap ^ 6
-" inoremap & 7
-" inoremap * 8
-" inoremap ( 9
-" inoremap ) 0
-" inoremap _ -
-
 
 call plug#begin('~/.vim/plugged')
 
@@ -346,6 +321,7 @@ set wildmode=longest,list,full
 " (Hopefully) removes the delay when hitting esc in insert mode
 " set noesckeys
 set ttimeout
+set timeoutlen=1000
 set ttimeoutlen=0
 set notimeout
 
