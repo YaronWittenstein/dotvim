@@ -3,6 +3,7 @@ let g:mapleader=','
 
 nnoremap n j
 nnoremap N J
+vnoremap n j
 
 call plug#begin('~/.vim/plugged')
 
