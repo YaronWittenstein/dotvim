@@ -1,6 +1,7 @@
 " Leader
 let g:mapleader=','
 
+nnoremap n j
 
 call plug#begin('~/.vim/plugged')
 
@@ -200,8 +201,7 @@ let g:ale_warn_about_trailing_whitespace = 1
 " Fuzzy Search
 Plug 'junegunn/fzf.vim'
   set rtp+=/usr/local/opt/fzf
-  nnoremap <Leader>l :Files<CR>
-  nnoremap <Leader>b :Buffers<CR>
+  nnoremap <Leader>f :Files<CR>
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -265,7 +265,7 @@ Plug 'janko-m/vim-test'
   let test#golang#gotest#executable = 'go test'
 
   nnoremap <Leader>t :TestNearest<cr>
-  nnoremap <Leader>f :TestFile<cr>
+  " nnoremap <Leader>f :TestFile<cr>
   nnoremap <Leader>a :TestSuite<cr>
 
 call plug#end()
