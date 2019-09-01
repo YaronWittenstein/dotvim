@@ -8,12 +8,9 @@ nnoremap N J
 
 vnoremap n j
 vnoremap e k
+vnoremap f e
 
 map <C-w> <C-W><C-w>
-" map <C-h> <C-w>h
-" map <C-w> <C-w>j
-" map <C-e> <C-w>k
-" map <C-i> <C-w>l
 
 nnoremap ' :
 nnoremap <Leader>w :w!<CR>
@@ -502,3 +499,7 @@ function! HasPaste()
   endif
   return ''
 endfunction
+
+
+
+map <C-q> <C-W>
