@@ -9,11 +9,13 @@ nnoremap N J
 vnoremap n j
 vnoremap e k
 
-map <C-h> <C-w>h
-map <C-w> <C-w>j
-map <C-e> <C-w>k
-map <C-i> <C-w>l
+map <C-w> <C-W><C-w>
+" map <C-h> <C-w>h
+" map <C-w> <C-w>j
+" map <C-e> <C-w>k
+" map <C-i> <C-w>l
 
+nnoremap ' :
 nnoremap <Leader>w :w!<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
@@ -218,7 +220,7 @@ let g:ale_warn_about_trailing_whitespace = 1
 " Fuzzy Search
 Plug 'junegunn/fzf.vim'
   set rtp+=/usr/local/opt/fzf
-  nnoremap <Leader><Leader> :Files<CR>
+  nnoremap <Leader>m :Files<CR>
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -499,4 +501,4 @@ function! HasPaste()
     return 'PASTE MODE  '
   endif
   return ''
- endfunction
+endfunction
