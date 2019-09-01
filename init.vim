@@ -1,9 +1,24 @@
 " Leader
 let g:mapleader=','
 
+" Colemak
 nnoremap n j
+nnoremap e k
 nnoremap N J
+
 vnoremap n j
+vnoremap e k
+
+map <C-h> <C-w>h
+map <C-w> <C-w>j
+map <C-e> <C-w>k
+map <C-i> <C-w>l
+
+nnoremap <Leader>w :w!<CR>
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :x<CR>
+nnoremap <Leader>cc :sp<CR>
+nnoremap <Leader>vv :vsp<CR>
 
 call plug#begin('~/.vim/plugged')
 
@@ -203,7 +218,7 @@ let g:ale_warn_about_trailing_whitespace = 1
 " Fuzzy Search
 Plug 'junegunn/fzf.vim'
   set rtp+=/usr/local/opt/fzf
-  nnoremap <Leader>f :Files<CR>
+  nnoremap <Leader><Leader> :Files<CR>
 
 " Git
 Plug 'airblade/vim-gitgutter'
@@ -368,7 +383,7 @@ vnoremap > >gv
 " Edit
 "  edit another file in the same directory as the current file
 "  uses expression to extract path from current file's path
-nnoremap <Leader><Leader> :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
+nnoremap <Leader>f :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
 
 " Buffers
 "# close the current buffer
@@ -417,11 +432,6 @@ set tm=500
 
 set updatecount=10    "Save buffer every 10 chars typed"
 
- map <C-h> <C-w>h
- map <C-j> <C-w>j
- map <C-k> <C-w>k
- map <C-l> <C-w>l
-
  " Keep the cursor in place while joining lines
 nnoremap J mzJ`z`
 
@@ -430,9 +440,6 @@ cnoremap w!! %!sudo tee > /dev/null
 
 " Search and replace the word under the cursor
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
-
-" Fast saving
-nmap <Leader>w :w!<cr>
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
