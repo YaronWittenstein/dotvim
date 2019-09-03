@@ -499,3 +499,4 @@ endfunction
 map <C-Q> <C-W>
 inoremap <C-A> ;
 inoremap <C-R> :
+inoremap <C-Z> <Esc>:q!
