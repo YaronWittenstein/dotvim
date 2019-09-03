@@ -3,12 +3,8 @@ let g:mapleader=','
 
 " Colemak
 nnoremap n j
-nnoremap e k
 nnoremap N J
-
 vnoremap n j
-vnoremap e k
-vnoremap f e
 
 map <C-w> <C-W><C-w>
 
