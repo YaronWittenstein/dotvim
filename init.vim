@@ -497,6 +497,12 @@ endfunction
 
 
 map <C-Q> <C-W>
-inoremap <C-A> ;
+
+inoremap <C-A> _
 inoremap <C-R> :
+
 inoremap <C-Z> <Esc>:q!
+nnoremap <C-Z> :q!
+
+nnoremap <C-B> h
+nnoremap <C-F> l
