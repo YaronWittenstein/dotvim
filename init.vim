@@ -3,7 +3,6 @@ let g:mapleader=','
 
 " Colemak
 nnoremap n j
-nnoremap N J
 vnoremap n j
 
 map <C-w> <C-W><C-w>
@@ -497,5 +496,6 @@ function! HasPaste()
 endfunction
 
 
-
-map <C-q> <C-W>
+map <C-Q> <C-W>
+inoremap <C-A> ;
+inoremap <C-R> :
