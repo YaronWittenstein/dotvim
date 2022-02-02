@@ -5,6 +5,9 @@ let g:mapleader=','
 nnoremap n j
 vnoremap n j
 
+vnoremap N 5j
+nnoremap K 5k
+
 map <C-w> <C-W><C-w>
 
 nnoremap ' :
@@ -161,7 +164,7 @@ vnoremap > >gv
 nnoremap <Leader>f :e <C-R>=escape(expand("%:p:h"),' ') . '/'<CR>
 
 " Buffers
-"# close the current buffer
+" close the current buffer
 nnoremap <C-q> :bd<CR>
 
 " better command-line editing
@@ -174,10 +177,10 @@ cnoremap <C-e> <end>
 cnoremap <C-d> <del>
 
 " enter command mode with one keystroke
-nnoremap ; :
-nnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
 
-"  expand path of current file in command mode remapping command-line mode
+" expand path of current file in command mode remapping command-line mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " Misc
